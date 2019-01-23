@@ -10,7 +10,9 @@ export default class App extends Component {
 
   testTransaction = async () => {
     spew('Starting...')
+    console.log(ReactNativeEos)
     spew(JSON.stringify(ReactNativeEos))
+
     ReactNativeEOS.setUrl('http', 'eos.greymass.com', 80)
     ReactNativeEos.getInfo(info => {
       spew(JSON.stringify(info))

@@ -1,3 +1,5 @@
 rootProject.name = 'vanilla'
+include ':react-native-eos'
+project(':react-native-eos').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-eos/android')
 
 include ':app'
