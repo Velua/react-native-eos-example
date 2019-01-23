@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button, ToastAndroid } from 'react-native';
 import ReactNativeEos from 'react-native-eos'
 
-const spew = message => {
-  ToastAndroid.show(message, ToastAndroid.SHORT)
-}
+// const spew = message => {
+//   ToastAndroid.show(message, ToastAndroid.SHORT)
+// }
 
 export default class App extends Component {
 
@@ -13,10 +13,10 @@ export default class App extends Component {
     console.log(ReactNativeEos)
     spew(JSON.stringify(ReactNativeEos))
 
-    ReactNativeEOS.setUrl('http', 'eos.greymass.com', 80)
-    ReactNativeEos.getInfo(info => {
-      spew(JSON.stringify(info))
-    })
+    // ReactNativeEOS.setUrl('http', 'eos.greymass.com', 80)
+    // ReactNativeEos.getInfo(info => {
+    //   spew(JSON.stringify(info))
+    // })
   }
 
   render() {
